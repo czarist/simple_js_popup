@@ -1,0 +1,42 @@
+/* pop-up */
+
+.rotate-135 {
+  transform: rotate(135deg);
+  position: relative;
+}
+
+section#outside-popup {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9999;
+  background-color: #212121a8;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.pop-up {
+  width: 750px;
+  height: 500px;
+  max-width: 95%;
+  background-color: white;
+  position: relative;
+  border: 3px solid #212121d6;
+}
+
+div#close-popup {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -15px;
+  right: -28px;
+  background-color: white;
+  border: 2px solid #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 27px;
+  border-radius: 100%;
+  cursor: pointer;
+}
