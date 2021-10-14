@@ -1,0 +1,50 @@
+<!-- conteúdo do pop-up é inserido com javascript -->
+<section class="d-none" id="outside-popup">
+  <div class="pop-up p-4">
+    <div class="d-flex justify-content-between">
+      <span id="cidade-popup"></span>
+      <h4 id="data-popup"></h4>
+    </div>
+    <h1 id="titulo-popup"></h1>
+    <p id="texto-popup"></p>
+    <p>
+      <b>Onde: </b>
+      <span id="onde-popup"></span>
+    </p>
+    <p>
+      <b>Quando:</b>
+      <span id="quando-popup"></span>
+    </p>
+    <p>
+      <b>Que horas?</b>
+      <span id="horas-popup"></span>
+    </p>
+    <div onclick="closepopup();" id="close-popup">
+      <i class="bi bi-x-lg"></i>
+    </div>
+    <hr />
+    <div class="d-flex justify-content-center align-items-center">
+      <div id="triangulo-popup"></div>
+    </div>
+  </div>
+</section>
+<!-- fim pop-up -->
+
+<div onclick="showpopup(this);" class="triangulo triangulo-siwper-verde">
+  <!-- aqui vão os valores do pop up que serão inseridos com javascript -->
+  <input type="hidden" name="data" value="12.09" />
+  <input type="hidden" name="cidade" value="Novo Hamburgo" />
+  <input type="hidden" name="titulo" value="Feira de Orgânicos" />
+  <input
+    type="hidden"
+    name="texto"
+    value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec auctor nulla, viverra ullamcorper nulla. Nullam hendrerit ac ipsum vitae hendrerit. Nulla sit amet velit in urna gravida facilisis. Aliquam cursus nisl ut lectus blandit scelerisque. Praesent ultrices dignissim ligula eget commodo. Integer quis mi tellus. Maecenas ut pellentesque urna. Nunc tempus fermentum nibh. Integer quis bibendum justo. Aenean ipsum urna, dignissim vitae mi et, porta vestibulum erat. Nunc sit amet varius est. Integer quis tincidunt neque."
+  />
+  <input
+    type="hidden"
+    name="onde"
+    value="Quisque imperdiet dignissim nulla, sed varius eros faucibus eget. Ut gravida nibh malesuada nulla dictum mollis. Nam in augue eu nibh vulputate egestas."
+  />
+  <input type="hidden" name="quando" value="23/10/2021" />
+  <input type="hidden" name="horas" value="16h às 21h" />
+</div>
